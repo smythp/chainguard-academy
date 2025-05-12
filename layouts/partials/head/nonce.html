@@ -1,0 +1,3 @@
+{{- $nonce := (randAlpha 32 | base64Encode) -}}
+{{- .Scratch.Set "csp_nonce" $nonce -}}
+{{- return $nonce -}}
